@@ -1,0 +1,39 @@
+---
+description: Conventions for authoring a NEW React Spectrum S2 component in this monorepo
+globs: packages/@react-spectrum/s2/src/**/*.tsx
+alwaysApply: false
+---
+
+# Authoring a new S2 component
+
+When creating a new component in `@react-spectrum/s2`, follow the repo's conventions.
+These are enforced because `CONTRIBUTING.md` requires them, and hooks check them.
+
+## Structure
+- Build on top of **React Aria** primitives (`react-aria-components`) for behavior and
+  accessibility. Do not hand-roll focus, keyboard, or ARIA logic that a primitive
+  already provides.
+- Use a **functional component**, wrapped in `forwardRef`, with a **named export**.
+- Co-locate the supporting files for every new `src/X.tsx`:
+  - `stories/X.stories.tsx` — one story per visual state.
+  - `test/X.test.tsx` — behavior tested with `@testing-library/react`.
+
+## Styling (hard rule)
+- Style **only** via the `style` macro and Spectrum tokens. **Never** use raw color
+  literals (`#RRGGBB`, `#RGB`, `rgb(...)`, `rgba(...)`, `hsl(...)`).
+
+```tsx
+// ❌ BAD — raw color, will be blocked by the no-raw-color hook
+<div style={{color: '#FFD700'}} />
+
+// ✅ GOOD — Spectrum token via the style macro
+import {style} from '@react-spectrum/s2/style' with {type: 'macro'};
+<div className={style({color: 'yellow-1000'})} />
+```
+
+## Events
+- Use `onPress` (and `onPressStart`/`onPressEnd` where relevant), **not** `onClick`.
+
+## Internationalization
+- Any user-facing string must come from the intl message system (`intl/*.json`), not a
+  hardcoded literal.
