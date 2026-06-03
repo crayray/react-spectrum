@@ -104,7 +104,7 @@ export const Rating = /*#__PURE__*/ forwardRef<HTMLDivElement, RatingProps>(func
         ref={ref}
         role="img"
         aria-label={`Rated ${currentValue} out of ${maxRating} stars`}
-        className={container()}>
+        className={container}>
         {Array.from({length: maxRating}, (_, i) => (
           <Star key={i} isFilled={i < currentValue} isDisabled={isDisabled} />
         ))}
@@ -128,7 +128,7 @@ export const Rating = /*#__PURE__*/ forwardRef<HTMLDivElement, RatingProps>(func
       onChange={handleChange}
       isDisabled={isDisabled}
       orientation="horizontal"
-      className={container()}
+      className={container}
       onPointerLeave={() => setHoveredValue(null)}>
       {Array.from({length: maxRating}, (_, i) => {
         let starValue = i + 1;

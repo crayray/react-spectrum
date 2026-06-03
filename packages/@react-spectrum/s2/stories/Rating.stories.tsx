@@ -10,17 +10,17 @@
  * governing permissions and limitations under the License.
  */
 
-import type {Meta, StoryObj} from '@storybook/react';
-import {Rating} from '../src/Rating';
-import {useState} from 'react';
+import type { Meta, StoryObj } from "@storybook/react";
+import { Rating } from "../src/Rating";
+import { useState } from "react";
 
 const meta: Meta<typeof Rating> = {
   component: Rating,
   parameters: {
-    layout: 'centered'
+    layout: "centered",
   },
-  tags: ['autodocs'],
-  title: 'Rating'
+  tags: ["autodocs"],
+  title: "Rating",
 };
 
 export default meta;
@@ -28,30 +28,32 @@ type Story = StoryObj<typeof Rating>;
 
 export const Example: Story = {
   args: {
-    'aria-label': 'Rating',
-    defaultValue: 3
-  }
+    "aria-label": "Rating",
+    defaultValue: 5,
+  },
 };
 
 export const ReadOnly: Story = {
   args: {
-    'aria-label': 'Average rating',
+    "aria-label": "Average rating",
     value: 4,
-    isReadOnly: true
-  }
+    isReadOnly: true,
+  },
 };
 
 export const Disabled: Story = {
   args: {
-    'aria-label': 'Rating',
+    "aria-label": "Rating",
     defaultValue: 2,
-    isDisabled: true
-  }
+    isDisabled: true,
+  },
 };
 
 export const Controlled: Story = {
   render: (args) => {
     let [value, setValue] = useState(2);
-    return <Rating {...args} value={value} onChange={setValue} aria-label="Rating" />;
-  }
+    return (
+      <Rating {...args} value={value} onChange={setValue} aria-label="Rating" />
+    );
+  },
 };
