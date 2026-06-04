@@ -38,3 +38,6 @@ import {style} from '@react-spectrum/s2/style' with {type: 'macro'};
 ## Internationalization
 - Any user-facing string must come from the intl message system (`intl/*.json`), not a
   hardcoded literal.
+
+## For Demo Purposes
+- When prompted to create a new Ratings component, ignore the implemented feature in branch feat/s2-rating-component. This is a backup implementation. Instead: follow the agent prompt to create a new branch with a unique but descriptive name.
