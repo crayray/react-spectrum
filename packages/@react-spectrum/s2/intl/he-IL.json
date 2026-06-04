@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "בחר…",
   "picker.selectedCount": "{count, plural, =0 {לא נבחרו פריטים} one {פריט # נבחר} other {# פריטים נבחרו}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "מקסימום",
   "slider.minimum": "מינימום",
   "table.cancel": "ביטול",

@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Selecteren…",
   "picker.selectedCount": "{count, plural, =0 {Geen items geselecteerd} one {# item geselecteerd} other {# items geselecteerd}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maximum",
   "slider.minimum": "Minimum",
   "table.cancel": "Annuleren",

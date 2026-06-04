@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Vybrat…",
   "picker.selectedCount": "{count, plural, =0 {Nevybrány žádné položky} one {Vybrána # položka} few {Vybrány # položky} other {Vybráno # položek}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maximum",
   "slider.minimum": "Minimum",
   "table.cancel": "Zrušit",

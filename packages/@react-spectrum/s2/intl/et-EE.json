@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Valige…",
   "picker.selectedCount": "{count, plural, =0 {üksuseid pole valitud} one {# üksus valitud} other {# üksust valitud}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maksimaalne",
   "slider.minimum": "Minimaalne",
   "table.cancel": "Tühista",

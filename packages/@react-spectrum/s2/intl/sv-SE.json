@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Välj…",
   "picker.selectedCount": "{count, plural, =0 {Inga objekt markerade} one {# objekt markerat} other {# objekt markerade}}.",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maximum",
   "slider.minimum": "Minimum",
   "table.cancel": "Avbryt",
