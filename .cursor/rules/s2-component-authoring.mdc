@@ -17,6 +17,8 @@ These are enforced because `CONTRIBUTING.md` requires them, and hooks check them
 - Co-locate the supporting files for every new `src/X.tsx`:
   - `stories/X.stories.tsx` — one story per visual state.
   - `test/X.test.tsx` — behavior tested with `@testing-library/react`.
+- When writing those tests, follow the **Testing a new S2 component** agent skill guide
+  (`packages/dev/s2-docs/skills/react-spectrum-s2/test-new-component.md`).
 
 ## Styling (hard rule)
 - Style **only** via the `style` macro and Spectrum tokens. **Never** use raw color

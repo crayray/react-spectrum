@@ -88,6 +88,7 @@ const CUSTOM_SKILL_CONTENT = {
       'If the requirements do not clearly specify which React Spectrum component to use, consult the [Component Decision Tree](references/guides/component-decision-tree.md) before choosing a component.',
       'If the request involves a Figma design, frame, or URL — or if the Figma MCP (`get_design_context`,`search_design_system`, etc.) is available — consult [Implementing Figma designs with React Spectrum S2](references/guides/figma-to-s2.md) before generating code.',
       'When writing tests that exercise S2 components, consult [Testing with React Spectrum S2](references/guides/test-utils-guidance.md) and prefer the ARIA pattern testers from `@react-spectrum/test-utils` over hand-rolled role/selector queries.',
+      'When **implementing or testing a new S2 component** in the react-spectrum monorepo (`packages/@react-spectrum/s2`), follow [Testing a new S2 component](references/guides/test-new-component.md) for co-located tests, state coverage, and verification commands.',
       `## React Spectrum S2 vs React Aria Components
 
 React Spectrum S2 is built on top of React Aria Components. The S2 components add Spectrum 2 styling, behavior, and slot structure on top of the unstyled React Aria primitives. Always prefer S2 components for React Spectrum work because they are pre-styled, design-system compliant, and cover most common UI patterns.
@@ -144,6 +145,16 @@ The React Aria Components documentation is bundled under \`references/react-aria
         ),
         description:
           'How to write tests for S2 components using ARIA pattern testers from `@react-spectrum/test-utils`.'
+      },
+      {
+        title: 'Testing a new S2 component',
+        path: 'test-new-component.md',
+        sourcePath: path.join(
+          REPO_ROOT,
+          'packages/dev/s2-docs/skills/react-spectrum-s2/test-new-component.md'
+        ),
+        description:
+          'How to add co-located tests and stories for a new component in the monorepo: state, accessibility, pattern testers, and verification.'
       }
     ]
   },
