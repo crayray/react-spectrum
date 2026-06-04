@@ -17,7 +17,7 @@ These are enforced because `CONTRIBUTING.md` requires them, and hooks check them
 - Co-locate the supporting files for every new `src/X.tsx`:
   - `stories/X.stories.tsx` — one story per visual state.
   - `test/X.test.tsx` — behavior tested with `@testing-library/react`.
-- When writing those tests, follow **`demo/skills.md`** (or the `test-new-s2-component` skill).
+- When writing those tests, follow the **`test-new-s2-component`** skill (`.cursor/skills/test-new-s2-component/SKILL.md`).
 
 ## Styling (hard rule)
 - Style **only** via the `style` macro and Spectrum tokens. **Never** use raw color
