@@ -111,6 +111,7 @@ export {ProgressBar, ProgressBarContext} from '../src/ProgressBar';
 export {ProgressCircle, ProgressCircleContext} from '../src/ProgressCircle';
 export {Provider, ColorSchemeContext} from '../src/Provider';
 export {RadioGroup, RadioGroupContext, Radio} from '../src/RadioGroup';
+export {Rating, RatingContext} from '../src/Rating';
 export {RangeCalendar, RangeCalendarContext} from '../src/RangeCalendar';
 export {RangeSlider, RangeSliderContext} from '../src/RangeSlider';
 export {SearchField, SearchFieldContext} from '../src/SearchField';

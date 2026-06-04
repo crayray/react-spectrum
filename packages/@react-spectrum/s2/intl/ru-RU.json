@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Выбрать…",
   "picker.selectedCount": "{count, plural, =0 {Нет выбранных элементов} one {# элемент выбран} other {# эл. выбрано}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Максимум",
   "slider.minimum": "Минимум",
   "table.cancel": "Отмена",

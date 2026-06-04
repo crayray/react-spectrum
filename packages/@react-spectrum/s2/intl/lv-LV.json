@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Izvēlēties…",
   "picker.selectedCount": "{count, plural, =0 {Nav atlasīts neviens vienums} one {# vienums atlasīts} other {# ieraksti vienumi}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maksimālā vērtība",
   "slider.minimum": "Minimālā vērtība",
   "table.cancel": "Atcelt",

@@ -28,6 +28,8 @@
   "notificationbadge.plus": "{notifications}+",
   "picker.placeholder": "Vælg…",
   "picker.selectedCount": "{count, plural, =0 {Ingen elementer valgt} one {# element valgt} other {# elementer valgt}}",
+  "rating.optionLabel": "{value, number} {value, plural, one {star} other {stars}}",
+  "rating.readOnly": "Rated {value, number} out of {maxValue, number} stars",
   "slider.maximum": "Maksimum",
   "slider.minimum": "Minimum",
   "table.cancel": "Annuller",
