@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": ".cursor/hooks/no-raw-color.sh"
+      },
+      {
+        "command": ".cursor/hooks/require-colocation.sh"
+      }
+    ]
+  }
+}

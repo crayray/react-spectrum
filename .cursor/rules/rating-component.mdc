@@ -1,0 +1,37 @@
+---
+description: Team pattern for building a Rating (star rating) component
+globs: packages/@react-spectrum/s2/src/Rating*.tsx
+alwaysApply: false
+---
+
+# Rating component pattern
+
+React Spectrum has no `Rating` component. When building one, follow this **team
+decision** about its accessibility model — it is not obvious and the AI should not
+guess.
+
+## Accessibility model: radiogroup, not slider
+- Render the rating as a **`radiogroup`** (`role="radiogroup"` with an accessible
+  name), where **each star is one radio option** with its own label, e.g.
+  "1 Star", "2 Stars". Exactly one option is checked.
+- This wins over a `slider` because each value gets a discrete, individually labelled,
+  keyboard-focusable target and announces cleanly in screen readers.
+
+## Required behavior
+- **Keyboard:** Left/Right (and Up/Down) arrows move between stars; Home/End jump to
+  first/last; the selected star is in the tab order (roving tabindex via the radio
+  group primitive).
+- **Hover preview:** hovering a star previews that value without committing until
+  press; clearing hover restores the committed value.
+- **Half stars:** support a `0.5` step via an `allowHalf` prop when requested.
+- **Controlled & uncontrolled:** support `value` / `defaultValue` / `onChange`.
+
+## Read-only display mode
+- When `isReadOnly` is set, do **not** render interactive radios. Render a static
+  presentation with `role="img"` and an `aria-label` summarizing the value, e.g.
+  `aria-label="Rated 3 out of 5 stars"`.
+
+## Styling & structure
+- Follow `s2-component-authoring`: build on React Aria primitives, `forwardRef` +
+  named export, style via the `style` macro with tokens (no raw colors), and co-locate
+  `stories/Rating.stories.tsx` + `test/Rating.test.tsx`.
